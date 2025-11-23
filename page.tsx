@@ -5,8 +5,8 @@ import Image from "next/image";
 
 export default function Dashboard() {
   return (
-    <div className="min-h-screen bg-gray-200 flex flex-col">
-      <header className="bg-blue-700 text-white p-4 flex justify-between items-center shadow">
+    <div className="min-h-screen bg-gray-100 flex flex-col">
+      <header className="bg-green-600 text-white p-4 flex justify-between items-center shadow">
         <h1 className="text-lg font-bold">Dashboard Guru - SMK TELKOM</h1>
         <span className="text-sm font-semibold">Oktavianto</span>
       </header>
@@ -60,7 +60,7 @@ export default function Dashboard() {
                 (item, i) => (
                   <div
                     key={i}
-                    className="bg-blue-600 hover:bg-blue-700 transition text-white rounded-lg p-4 text-center cursor-pointer text-sm font-semibold"
+                    className="bg-green-500 hover:bg-green-600 transition text-white rounded-lg p-4 text-center cursor-pointer text-sm font-semibold"
                   >
                     {item}
                   </div>
@@ -83,7 +83,7 @@ export default function Dashboard() {
           <div className="bg-white rounded-lg shadow p-4 text-center">
             <h2 className="font-semibold text-gray-700 mb-2">Guru Terbaik</h2>
             <img
-              src="https://cdn-icons-png.flaticon.com/512/3237/3237472.png"
+              src="/Assets/teacher.png"
               className="w-14 h-14 mx-auto mb-1"
               alt="Guru"
             />
@@ -94,14 +94,14 @@ export default function Dashboard() {
             <h2 className="font-semibold text-gray-700 mb-2">Berita</h2>
 
             <Image
-              src="/Assets/bakekok.png"
+              src="/Assets/news.png"
               width={400}
               height={200}
               className="w-full h-28 object-cover rounded-lg mb-2"
               alt="News"
             />
 
-            <div className="bg-blue-100 rounded-lg p-3">
+            <div className="bg-green-100 rounded-lg p-3">
               <h3 className="font-bold text-gray-800">Aplikasi Cuti 3.0</h3>
               <p className="text-gray-600 text-sm">
                 Aplikasi cuti telah diperbarui menyesuaikan kebijakan terbaru.
